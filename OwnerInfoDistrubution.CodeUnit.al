@@ -13,7 +13,7 @@ codeunit 50701 InfoDistubution
 
         IF RecCust.GET(Rec."Sell-to Customer No.") THEN begin
             Rec.Validate(OwnerName, RecCust.OwnersName);
-            Rec.Validate(OwnerId, RecCust.OwnersIdCode);
+            Rec.Validate(OwnerIdCode, RecCust.OwnersIdCode);
         end
         else
             Message('record was not found');

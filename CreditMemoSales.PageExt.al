@@ -9,7 +9,7 @@ pageextension 50704 CreditMemoSalesOwner extends "Sales Credit Memo"
                 ApplicationArea = All;
                 Caption = 'Owners Name';
             }
-            field(OwnersId; OwnerId)
+            field(OwnersId; OwnerIdCode)
             {
                 ApplicationArea = All;
                 Caption = 'Owners Id Code';

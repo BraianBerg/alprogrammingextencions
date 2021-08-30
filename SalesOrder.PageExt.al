@@ -9,7 +9,7 @@ pageextension 50702 SalesOrderOwner extends "Sales Order"
                 ApplicationArea = All;
                 Caption = 'Owner Name';
             }
-            field(OwnerId; OwnerId)
+            field(OwnerId; OwnerIdCode)
             {
                 ApplicationArea = All;
                 Caption = 'Owner Id Code';

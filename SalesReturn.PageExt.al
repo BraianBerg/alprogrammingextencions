@@ -4,12 +4,12 @@ pageextension 50705 SalesRetunOwner extends "Sales Return Order"
     {
         addlast(General)
         {
-            field(OwnersName; OwnerName)
+            field(OwnerName; OwnerName)
             {
                 ApplicationArea = All;
                 Caption = 'Owners Name';
             }
-            field(OwnersId; OwnerId)
+            field(OwnerId; OwnerIdCode)
             {
                 ApplicationArea = All;
                 Caption = 'Owners Id Code';

@@ -9,7 +9,7 @@ pageextension 50701 SalesInvoiceOwner extends "Sales Invoice"
                 ApplicationArea = All;
                 Caption = 'Owners Name';
             }
-            field(OwnersId; OwnerId)
+            field(OwnersId; OwnerIdCode)
             {
                 ApplicationArea = All;
                 Caption = 'Owners Id';
