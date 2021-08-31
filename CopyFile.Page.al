@@ -11,21 +11,21 @@ page 50705 Coping
         {
             group(GroupName)
             {
-                field(FileName; FileName)
+                field(FileName; AGP_PRK_001_FileName)
                 {
                     ApplicationArea = All;
-                    Caption = 'Old File Name';
+                    ToolTip = 'File that you want to copy';
                     Editable = true;
                 }
-                field(NewFileName; NewFileName)
+                field(NewFileName; AGP_PRK_001_NewFileName)
                 {
                     ApplicationArea = All;
-                    Caption = 'New File Name';
+                    ToolTip = 'File that you want to paste in';
                     Editable = true;
                 }
-                field(FileType; FileType)
+                field(FileType; AGP_PRK_001_FileType)
                 {
-                    Caption = 'File Type';
+                    ToolTip = 'The type of file what you want to create!';
                     ApplicationArea = All;
                     Editable = true;
                 }
@@ -44,6 +44,8 @@ page 50705 Coping
                 Caption = 'Copy File';
 
                 trigger OnAction()
+                var
+                    CopyRec: Codeunit CopyAndCreate;
                 begin
                     CopyRec.CopyFile(Rec, xRec);
                 end;
@@ -57,6 +59,8 @@ page 50705 Coping
                 Caption = 'Create File';
 
                 trigger OnAction()
+                var
+                    CopyRec: Codeunit CopyAndCreate;
                 begin
                     CopyRec.CreateFile(Rec, xRec);
                 end;
@@ -64,9 +68,4 @@ page 50705 Coping
 
         }
     }
-
-
-
-    var
-        CopyRec: Codeunit CopyAndCreate;
 }

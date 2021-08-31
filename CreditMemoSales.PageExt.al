@@ -4,24 +4,16 @@ pageextension 50704 CreditMemoSalesOwner extends "Sales Credit Memo"
     {
         addlast(General)
         {
-            field(OwnersName; OwnerName)
+            field(OwnersName; AGP_PRK_001_OwnersName)
             {
                 ApplicationArea = All;
-                Caption = 'Owners Name';
+                ToolTip = 'Is Customer cards Owner Name';
             }
-            field(OwnersId; OwnerId)
+            field(OwnersId; AGP_PRK_001_OwnersIdCode)
             {
                 ApplicationArea = All;
-                Caption = 'Owners Id Code';
+                ToolTip = 'Is Customer cpmany Owner Identification Code(Estonias Id code)';
             }
         }
     }
-
-    actions
-    {
-        // Add changes to page actions here
-    }
-
-    var
-        myInt: Integer;
 }

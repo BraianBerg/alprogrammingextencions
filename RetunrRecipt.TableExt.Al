@@ -1,4 +1,4 @@
-tableextension 50700 CustomerCardOwner extends Customer
+tableextension 50707 ReturnReciptOwnersInfo extends "Return Receipt Header"
 {
     fields
     {

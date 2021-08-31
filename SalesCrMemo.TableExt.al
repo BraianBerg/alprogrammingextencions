@@ -1,4 +1,4 @@
-tableextension 50700 CustomerCardOwner extends Customer
+tableextension 50708 SalesCrMemoOwnerInfo extends "Sales Cr.Memo Header"
 {
     fields
     {
@@ -15,5 +15,4 @@ tableextension 50700 CustomerCardOwner extends Customer
             Editable = true;
         }
     }
-
 }

@@ -4,27 +4,17 @@ pageextension 50700 "Company Owner" extends "Customer Card"
     {
         addlast(General)
         {
-            field(OwnersName; OwnersName)
+            field(OwnersName; AGP_PRK_001_OwnersName)
             {
                 ApplicationArea = All;
-                Caption = 'Owners Name';
-
+                ToolTip = 'Is Customers compay Owner Name';
             }
-            field(OwnersIdCode; OwnersIdCode)
+            field(OwnersIdCode; AGP_PRK_001_OwnersIdCode)
             {
                 ApplicationArea = All;
-                Caption = 'Owners Id Code';
+                ToolTip = 'Is Customer company Owner Identification Code(Estonias Id code)';
             }
         }
 
     }
-
-    actions
-    {
-        ////sdsdsdsd
-    }
-
-
-    var
-        myInt: Integer;
 }

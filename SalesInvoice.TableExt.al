@@ -1,4 +1,4 @@
-tableextension 50700 CustomerCardOwner extends Customer
+tableextension 50709 SalesInvoceOwnerInfo extends "Sales Invoice Header"
 {
     fields
     {
@@ -15,5 +15,4 @@ tableextension 50700 CustomerCardOwner extends Customer
             Editable = true;
         }
     }
-
 }
