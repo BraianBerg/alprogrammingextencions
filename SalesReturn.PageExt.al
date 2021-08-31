@@ -4,24 +4,16 @@ pageextension 50705 SalesRetunOwner extends "Sales Return Order"
     {
         addlast(General)
         {
-            field(OwnerName; OwnerName)
+            field(OwnerName; AGP_PRK_001_OwnersName)
             {
                 ApplicationArea = All;
-                Caption = 'Owners Name';
+                ToolTip = 'Is Customer cards Owner Name';
             }
-            field(OwnerId; OwnerIdCode)
+            field(OwnerId; AGP_PRK_001_OwnersIdCode)
             {
                 ApplicationArea = All;
-                Caption = 'Owners Id Code';
+                ToolTip = 'Is Customer cards Owner Identification Code(Estonias Id code)';
             }
         }
     }
-
-    actions
-    {
-        // Add changes to page actions here
-    }
-
-    var
-        myInt: Integer;
 }

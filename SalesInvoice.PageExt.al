@@ -4,29 +4,18 @@ pageextension 50701 SalesInvoiceOwner extends "Sales Invoice"
     {
         addlast(General)
         {
-            field(OwnersName; OwnerName)
+            field(OwnersName; AGP_PRK_001_OwnersName)
             {
                 ApplicationArea = All;
-                Caption = 'Owners Name';
+                ToolTip = 'Is Customer cards Owner Name';
             }
-            field(OwnersId; OwnerIdCode)
+            field(OwnersId; AGP_PRK_001_OwnersIdCode)
             {
                 ApplicationArea = All;
-                Caption = 'Owners Id';
+                ToolTip = 'Is Customer cards Owner Identification Code(Estonias Id code)';
             }
         }
-
     }
-
-    actions
-    {
-        // Add changes to page actions here
-    }
-
-    var
-        myInt: Integer;
-
-
 }
 
 

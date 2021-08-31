@@ -1,22 +1,18 @@
-tableextension 50701 SalesIvoiceTables extends "Sales Header"
+tableextension 50701 SalesTableOwnerInfo extends "Sales Header"
 {
     fields
     {
-        field(50711; OwnerName; Text[50])
+        field(50701; AGP_PRK_001_OwnersName; Text[50])
         {
-            DataClassification = ToBeClassified;
+            DataClassification = CustomerContent;
             Caption = 'Owners Name';
             Editable = true;
         }
-        field(50710; OwnerIdCode; Text[11])
+        field(50702; AGP_PRK_001_OwnersIdCode; Text[11])
         {
-            DataClassification = ToBeClassified;
+            DataClassification = CustomerContent;
             Caption = 'Owners Id Code';
             Editable = true;
         }
     }
-
-
-    var
-        myInt: Integer;
 }

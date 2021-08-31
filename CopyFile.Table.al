@@ -1,54 +1,26 @@
 table 50705 CopyFile
 {
-    DataClassification = ToBeClassified;
+    DataClassification = CustomerContent;
 
     fields
     {
-        field(50705; FileName; Text[50])
+        field(50705; AGP_PRK_001_FileName; Text[50])
         {
-            DataClassification = ToBeClassified;
+            DataClassification = CustomerContent;
             Editable = true;
             Caption = 'Old File Name';
 
         }
-        field(50706; NewFileName; Text[50])
+        field(50706; AGP_PRK_001_NewFileName; Text[50])
         {
-            DataClassification = ToBeClassified;
+            DataClassification = CustomerContent;
             Editable = true;
             Caption = 'New File Name';
         }
-        field(50707; FileType; Option)
+        field(50707; AGP_PRK_001_FileType; Option)
         {
             OptionMembers = "Text File","Word Document";
-            DataClassification = ToBeClassified;
+            DataClassification = CustomerContent;
         }
     }
-
-
-
-    var
-        myInt: Integer;
-
-    trigger OnInsert()
-    begin
-
-    end;
-
-    trigger OnModify()
-    begin
-
-    end;
-
-    trigger OnDelete()
-    begin
-
-    end;
-
-    trigger OnRename()
-    begin
-
-    end;
-
-
-
 }
